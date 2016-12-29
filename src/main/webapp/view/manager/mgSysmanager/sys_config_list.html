@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>系统配置项</title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="stylesheet" type="text/css" href="../../../css/manager/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/manager/public.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/manager/organize.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common_layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../../css/pagination.css"/>
+<script type="text/javascript" src="../../../js/commons/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../../js/commons/commons.js" ></script>
+<script type="text/javascript" src="../../../js/commons/jquery.pagination.js" ></script>
+<script type="text/javascript" src="js/sysConfigList.js"></script>
+</head>
+<body>
+<div class="newuser">
+  <form id="searchForm">
+	<input type="hidden" name="page"/>
+	<input type="hidden" name="rows"/>
+    <!-- <div class="newuser_top">
+        <div class="newuser_search clearfix">
+            <div class="comsearch clearfix fr">
+                <div class="serchframe fl" style="margin-right: 10px; border: 1px solid #ccc;">
+                    <input type="text" name="keyName" placeholder="配置项名称" maxlength="50" />
+                </div>
+                <div class="serchframe fl">
+                    <input type="text" name="keyDesc" placeholder="描述" maxlength="50" />
+                </div>
+                <div class="search_btn fl">
+                    <a id="search" href="javascript:void(0);">搜索</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  </form>
+   <div class="newuser_tit clearfix">
+       <h3 class="fl">系统配置项列表</h3>
+   </div>
+   <div class="newuser_info">
+       <div class="newuser_change">
+         <div class="newuser_table">
+           	<table id="dataView">
+		    	<thead>
+		         	<tr>
+		             	<th width="5%" style="text-align: center;font-size:14px; font-weight:bold;">序号</th>
+		             	<th width="25%" style="text-align: left;font-size:14px; font-weight:bold;">配置项名称</th>
+		             	<th width="30%" style="text-align: left;font-size:14px; font-weight:bold;">配置项值</th>
+		                <th width="25%" style="text-align: left;font-size:14px; font-weight:bold;">描述</th>
+		                <th width="10%" style="text-align: left;font-size:14px; font-weight:bold;">录入时间</th>
+		                <th width="5%" style="text-align: left;font-size:14px; font-weight:bold;">操作</th>
+		             </tr>
+		         </thead>
+		    </table>
+     	</div>
+	  <div id="pagination" class="pagination"></div>
+	</div>
+  </div>
+</div>
+</body>
+</html>

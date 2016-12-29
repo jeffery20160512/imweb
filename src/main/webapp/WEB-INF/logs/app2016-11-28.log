@@ -1,0 +1,96 @@
+12:08:59.533 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12:08:59.678 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+12:09:03.427 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+12:09:03.485 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+12:09:03.527 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+12:09:03.564 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+12:09:03.612 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+12:09:03.658 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+12:09:03.706 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+12:09:03.751 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+12:09:20.055 [1813533197@qtp-777855410-2] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+12:09:20.067 [1813533197@qtp-777855410-2] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+12:09:20.121 [1813533197@qtp-777855410-2] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+12:09:20.123 [1813533197@qtp-777855410-2] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+12:09:28.643 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+12:09:28.648 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1]
+12:09:29.056 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@65ae582a] will be managed by Spring
+12:09:29.058 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65ae582a]
+12:09:29.067 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+12:09:29.110 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+12:09:29.143 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1]
+12:09:29.144 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1] from current transaction
+12:09:29.146 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65ae582a]
+12:09:29.147 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.job_type_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+12:09:29.148 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+12:09:29.160 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@65ae582a]
+12:09:29.160 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ==>  Preparing: select count(id) from t_job_resume where job_id = ? 
+12:09:29.161 [689233273@qtp-777855410-4] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ==> Parameters: 1(Integer)
+12:09:29.178 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1]
+12:09:29.180 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1]
+12:09:29.180 [689233273@qtp-777855410-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b420fe1]
+12:09:45.721 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+12:09:45.721 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b31e379]
+12:09:45.722 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@462923ba] will be managed by Spring
+12:09:45.722 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@462923ba]
+12:09:45.723 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+12:09:45.723 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+12:09:45.725 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b31e379]
+12:09:45.726 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b31e379]
+12:09:45.726 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b31e379]
+12:09:50.682 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+12:09:50.682 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d73edea]
+12:09:50.683 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@8018b99] will be managed by Spring
+12:09:50.683 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@8018b99]
+12:09:50.683 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+12:09:50.684 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+12:09:50.685 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d73edea]
+12:09:50.686 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d73edea]
+12:09:50.686 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d73edea]
+12:09:51.637 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+12:09:51.637 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b]
+12:09:51.638 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@738650] will be managed by Spring
+12:09:51.639 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@738650]
+12:09:51.639 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+12:09:51.639 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+12:09:51.641 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b]
+12:09:51.642 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b] from current transaction
+12:09:51.642 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@738650]
+12:09:51.643 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.job_type_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+12:09:51.643 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+12:09:51.646 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@738650]
+12:09:51.647 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ==>  Preparing: select count(id) from t_job_resume where job_id = ? 
+12:09:51.647 [1813533197@qtp-777855410-2] DEBUG com.isoftstone.app.entity.job.JobDao.selectResumeByJobId.debug - ==> Parameters: 1(Integer)
+12:09:51.650 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b]
+12:09:51.651 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b]
+12:09:51.651 [1813533197@qtp-777855410-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2076ee6b]
+15:15:27.128 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:15:27.154 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+15:15:27.582 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+15:15:27.608 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+15:21:22.503 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:21:22.529 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+15:21:22.935 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+15:21:22.963 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+15:25:45.080 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:25:45.103 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+15:25:45.508 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+15:25:45.533 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+15:29:27.208 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:29:27.232 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+15:29:27.625 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+15:29:27.646 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [C:\Users\dell\Desktop\通讯\imweb\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+15:30:01.481 [167655841@qtp-1756763128-0] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+15:30:01.494 [167655841@qtp-1756763128-0] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+15:30:01.579 [167655841@qtp-1756763128-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:30:01.581 [167655841@qtp-1756763128-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+15:33:17.648 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+15:33:17.656 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2647f0]
+15:33:17.719 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@325adead] will be managed by Spring
+15:33:17.721 [167655841@qtp-1756763128-0] DEBUG com.isoftstone.app.userDao.getUserById.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@325adead]
+15:33:17.725 [167655841@qtp-1756763128-0] DEBUG com.isoftstone.app.userDao.getUserById.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE id=? 
+15:33:17.752 [167655841@qtp-1756763128-0] DEBUG com.isoftstone.app.userDao.getUserById.debug - ==> Parameters: 1(Long)
+15:33:17.826 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2647f0]
+15:33:17.827 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization rolling back SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2647f0]
+15:33:17.828 [167655841@qtp-1756763128-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2647f0]
+15:33:17.829 [167655841@qtp-1756763128-0] ERROR com.isoftstone.app.controller.UserController.getUserById - 查询异常

@@ -1,0 +1,52 @@
+/*提示框样式*/
+.dialog_line { border-top: 1px solid #cecece; clear: both;}
+.overlay {width:100%;height:100%;background:#000;filter: Alpha(Opacity=40);opacity:.4;position:absolute;top:0;left:0;z-index:199;/* display:none; */}
+
+.dialog{ width:414px; border:1px solid #cecece; background:#fff; display:none; z-index: 40000;}
+.assort{ width:500px; height:auto; border:1px solid #cecece; background:#fff; display:none;width:500px; height:340px;}
+.assort_content{ float:left; padding:10px 20px; width:460px;overflow-y:auto; font-size:14px; color:#333;}
+.assort_content h4{ float:left; width:80px; margin-left:40px;}
+.assort_content ul { float:left; width:340px;}
+.assort_content ul li{ float:left; width:100%;  line-height:24px;}
+.delete_dialog{ height:264px;}
+.delete_content{float:left; width:100%;font-size:14px; color:#333; height:155px;}
+.delete_content .txt{ float:left;/* margin-left:60px; *//* padding-left:40px; */ width:400px;font-size:16px;line-height:36px;text-align:center;margin:50px auto; /*background:url(../images/wenhao.png) 10px no-repeat*/}
+
+
+.dialog .dialog_title{ float:left; width:100%; height:44px; line-height:44px; font-size:16px; color:#fff; text-align:center; background:#0b5abb;}
+.dialog .dialog_form{ float: left; border-bottom:1px solid #cecece;}
+.dialog .dialog_form textarea{width: 230px;height: 60px; padding:5px;font-size:12px;}
+/* .dialog .dialog_form ul{ float:left; padding:10px 0 20px 30px}
+.dialog .dialog_form ul li{ float:left; width:100%; margin-top:15px; margin-bottom:5px; font-size:14px; line-height:32px; color:#555;}
+.dialog .dialog_form ul li span{ float:left; margin-right:10px; width:90px; text-align:right;}
+.dialog .dialog_form ul li .txt{ float:left; width:200px; height:32px;margin:0;padding-left:5px;} */
+.dialog .dialog_footer{ float:right; width:170px; margin:20px;}
+.dialog  .btn-reset{ float:left; width:75px;height:26px; border:none;background:url(/lgcpsp.web/images/btn-reset.png) no-repeat;}
+.dialog  .btn-true{ float:right; width:75px; height:26px; border:none; background:url(/lgcpsp.web/images/btn-true.png) no-repeat;}
+
+/*弹出框错误提示*/
+.pTipE{ color: #AE0505;display: inline-block;float: left;height: 35px;line-height: 35px;overflow: hidden;padding-left: 10px;width: 240px;text-align: left;}
+
+.loadings {width:32px;height:32px;background:url(../images/loadings.gif) no-repeat;margin:0 auto;margin-top:16px;}
+.loadingt {width:64px;height:64px;position: absolute;top:50%;left:50%;margin-left:-16px;margin-top:-16px;z-index:100000;background:#fff;}
+
+
+/*validate*/
+.error,.right{ display:inline-block; line-height:24px; color:#595959; margin-left:5px; padding:0 5px 0 26px; position:relative; vertical-align:middle;}
+.error{background:url(../images/error.png) no-repeat 1px 2px #fff2f2; border:1px solid #ff8080;}
+.right{background:url(../images/right.png) no-repeat 1px 2px #f0ffe3; border:1px solid #9bde64;}
+.error-p{display: inline-block; float:left;}
+.error-p .error,.error-p .right{ margin:5px 0 0 0;}
+.lavTiD {position:relative;}
+.errorL {position:absolute;bottom:0px;right:-90px;}
+/*一列两行验证修改*/
+.errorTip{ display: block;margin: 0 0 9px 145px;position: inherit;width: 170px;}
+.errorTips {margin-left:125px}
+
+/*0209*/
+.purview { padding-top:261px; width:320px; margin:0 auto;background:url(../images/purview.png) 100px 146px no-repeat;}
+.purview-nr span { font:normal 16px/22px "微软雅黑"; color:#0a0501;}
+.purview-nr p { text-align:left; padding-top:10px;}
+.purview-nr p em { padding:0 20px;font:normal 14px/22px "微软雅黑";}
+.purview-nr p a {font:normal 14px/22px "微软雅黑"; color:#0a0501;}
+.purview-nr p a:hover { color:#0b5abb;}

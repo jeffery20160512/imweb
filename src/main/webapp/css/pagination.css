@@ -1,0 +1,69 @@
+.pagination {
+	display: inline-block;
+    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+	position:relative;
+}
+        
+.pagination a {
+    text-decoration: none;
+	border: solid 1px #999;
+	color: #333;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 0 0.5em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+	border: solid 1px #AAE;
+	height:19px;
+	line-height:19px;
+}
+
+.pagination .current.prev, .pagination .current.next{
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+
+.pagination .current.first, .pagination .current.last {
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+
+.pagination .inputText {
+	width: 25px;
+    border-color:#999;
+	border: solid 1px #999;
+	display: inline-block;
+    padding:1px 0.5em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	position: relative;
+    /* top: 2px; */
+    height:18px;
+    font-size:12px;
+}
+
+.pagination .goto {
+	width: 30px;
+	border: solid 1px #999;
+	height:22px;
+	font-size:12px;
+	display: inline-block;
+    padding: 0 0.5em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	position: relative;margin-left:5px;
+    /* top: 2px; */
+    background:url(../images/jb.png) repeat-x left -79px;
+}
+.pagination .select {border-color:#999;height:20px;font-size:12px;}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>智造东莞</title>
+<meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="icon" href="images/logo.ico">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!-- <link href="/epsp/res/ptwork/css/low_browser.css" rel="stylesheet" type="text/css" /> -->
+<style type="text/css">
+.login_mian .q_box .pop_code{position: absolute;top: -50px;right: 40px;width: 153px;background-color: #fff;}
+.login_mian .q_box .Hide {display: none ;}
+
+</style>
+<script type="text/javascript" src="../../../js/commons/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../../js/commons/jquery.validate.js"></script>
+<script type="text/javascript" src="../../../js/commons/jquery.md5.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("html").css("overflow","auto");
+	$("body").css("overflow","auto");
+	//setTimeout(function(){
+	//$('#deleteTip').empty();
+	//},100);
+	$('.userentry input').focus(function(){
+		$(this).parent().addClass('bor');
+	});
+	$('.userentry input').blur(function(){
+		$(this).parent().removeClass('bor');
+	});
+	$('.passentry input').focus(function(){
+		$(this).parent().addClass('bor');
+	});
+	$('.passentry input').blur(function(){
+		$(this).parent().removeClass('bor');
+	});
+})
+
+</script>
+</head>
+
+<body>
+<div class="head_box">
+	<div class="head loginWidth clearfix">
+    	<!-- <div class="logo fl">
+        	<h1>
+            	<a href="/epsp/index.html">
+                	<img src="../images/logo_login.png">
+                </a>
+            </h1>
+        </div> -->
+         <div class="welcome fl">
+        	<h3>欢迎登录</h3>
+        </div> 
+    </div>
+</div>
+<div class="login_mian">
+	<div class="ashore loginWidth">
+    	<div class="ashore_bg clearfix">
+        	<div class="ashore_img fl">
+            	<img src="images/login_banner.png">
+            </div>
+            <div class="interface fl">
+            	<form id="loginForm">
+					<div class="username">
+						<span>登录账号</span>
+					</div>
+                	<div class="user clearfix">
+                        <div class="userentry fl">
+                        	<input type="text"  id="username" name="username"/>
+                        </div>
+                    </div>
+					<div class="passname">
+						<span>登录密码</span>
+					</div>
+                    <div class="pass clearfix">
+                        <div class="passentry fl">
+                        	<input type="password" name="password" id="password" maxlength="16"/>
+                        </div>
+                    </div>
+                    
+                     <div class="q_box">
+						<div class="user_input">
+							<input type="text" style="width: 100px;" id="code" name="code"  placeholder="验证码" />
+						</div>	
+						<img id="refreshCode" alt="点击刷新" src="/zpApp/adminUser/genVerifyCode.json" width="97px" height="36px"/>
+						<!-- <div class="pop_code Hide">
+							<span class="pic">
+								<img id="imageCode" alt="点击刷新" src="/zpApp/adminUser/genVerifyCode.json" width="130" height="45" style="margin-top:380px; position:absolute;right:290px;">
+							</span>
+							<a class="refresh" id="J_refresh" href="##"><i class="icon-refresh"></i></a>
+						</div> -->
+					</div> 
+					
+					<div id="tips" class="tips fl" style="margin-top:20px;">
+						<div id="error_tips" class="error_tips" style="display: none;">
+							<span id="error_logo" class="error_logo"></span>
+							<span id="err_m" class="err_m" style="color:#f00;"></span>
+						</div>
+					</div>
+					<div class="remember clearfix">
+						<a href="retrieve.html">忘记密码</a>
+						<!-- <a style="margin-right:4px;" href="rest_username.html">重置企业账号</a> -->
+					</div> 
+                    <div class="inter_btn">
+                    	<input type="button" class="login_btn" id="loginBtn" value="登&nbsp;&nbsp;&nbsp;&nbsp;录">
+                    </div>
+                    <div class="register">
+                        <a href="../gld/selectRegisterType.html">立即注册</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+		<div class="footer_menu">
+			<ul>
+				<li><a href="/epsp/res/ptwork/footer/about.html" target="_blank">关于我们</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/footer/contact.html" target="_blank">联系我们</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/helpCenter.html" target="_blank">帮助中心</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/footer/legal.html" target="_blank">法律声明</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/footer/link.html" target="_blank">友情链接</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/footer/duty.html" target="_blank">隐私条款</a><span>|</span></li>
+				<li><a href="/epsp/res/ptwork/footer/privacy.html" target="_blank">免责声明</a></li>
+			</ul>
+		</div>
+		<div class="footer_cr">CopyRight © 2015 东莞市经济和信息化局 All Rights
+			Reserved</div>
+		<div class="footer_add">地址：东莞市南城区鸿福西路68号塞纳嘉园二楼<!-- [<a href="#">详细地图</a>] -->&nbsp;&nbsp;&nbsp;&nbsp;技术支持：软通动力技术服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备05053645号-2</div>
+</div>
+</body>
+</html>

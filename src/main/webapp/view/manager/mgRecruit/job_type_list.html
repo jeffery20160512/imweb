@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">  
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">  
+<meta HTTP-EQUIV="expires" CONTENT="0">  
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>专家分类设置</title>
+<link rel="stylesheet" type="text/css" href="../../../css/manager/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../css/manager/public.css">
+<link rel="stylesheet" type="text/css" href="../../../css/manager/infomation.css">
+<link rel="stylesheet" href="../../../css/manager/tb1.css"/>
+
+<script type="text/javascript" src="../../../js/commons/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../../../js/commons/commons.js"></script>
+<script type="text/javascript" src="js/jobTypeList.js"></script>
+</head>
+<body>
+<input type="hidden" name="classification" id="classification" />
+<div class="reginfo">
+	<div class="navBar">
+		<ul>
+			<li id="putong" class="active" onclick="loadList(1)">职位类型列表</li>
+			<li id="qiangan" onclick="loadList(2)">工作地点列表</li> 
+		</ul>
+	</div>
+	<div class="reg1_type">
+		<dl class="clear">
+			<dt>
+				<span class="reg_span1 t_c">序号</span>
+				<span class="reg_span2">类别名称</span>
+				<span class="reg_span3">操作</span>
+			</dt>
+			<dd id="opDd">
+			   <span style="width: 80%;">&nbsp;</span>
+               <span style="width: 18%;">
+                   <a class="reg_add" href="javascript:;">+ 添加 </a>
+               </span>
+			</dd>
+		</dl>
+	</div>
+</div>
+</body>
+</html>

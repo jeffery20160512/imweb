@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoftstone.app.syncDao">
+
+	<resultMap type="com.isoftstone.app.entity.Office"  id="officeResultMap">
+		<id column="id" property="id" />
+		<result column="parent_id" property="parentId" />
+		<result column="parent_ids" property="parentIds" />
+		<result column="name" property="name" />
+		<result column="sort" property="sort" />
+		<result column="code" property="code" />
+		<result column="type" property="type" />
+		<result column="useable" property="useable" />
+		<result column="primary_person" property="primaryPerson" />
+		<result column="del_flag" property="delFlag" />
+		<result column="deputy_person" property="deputyPerson" />
+		<result column="create_date" property="createDate" />
+		<result column="update_date" property="updateDate" />
+		<result column="remarks" property="remarks" />
+	</resultMap>
+
+	<!-- 公共的查询列 -->
+	<sql id="officeColumns">
+		a.id,
+    	a.parent_id AS "parentId",
+    	a.parent_ids AS "parentIds",
+    	a.name,
+    	a.sort,
+    	a.code,
+		a.type,
+		a.useable,
+		a.primary_person AS "primaryPerson",
+		a.del_flag AS "delFlag",
+    	a.deputy_person AS "deputyPerson",
+    	a.remarks,
+    	a.create_date,
+    	a.update_date
+	</sql>
+	
+	<resultMap type="com.isoftstone.app.entity.User"  id="userResultMap">
+		<id column="id" property="id" />
+		<result column="oa_id" property="oaId" />
+		<result column="office_id" property="officeId" />
+		<result column="login_name" property="loginName" />
+		<result column="password" property="password" />
+		<result column="no" property="no" />
+		<result column="name" property="name" />
+		<result column="email" property="email" />
+		<result column="phone" property="phone" />
+		<result column="mobile" property="mobile" />
+		<result column="user_type" property="userType" />
+		<result column="remarks" property="remarks" />
+		<result column="photo" property="photo" />
+		<result column="del_flag" property="delFlag" />
+		<result column="nick_name" property="nickName" />
+		<result column="position" property="position" />
+		<result column="quit_flag" property="quitFlag" />
+		<result column="sex" property="sex" />
+		<result column="job_des" property="jobDes" />
+		<result column="status" property="status" />
+		<result column="online_status" property="onlineStatus" />
+		<result column="source_type" property="sourceType" />
+		<result column="create_date" property="createDate" />
+		<result column="update_date" property="updateDate" />
+	</resultMap>
+
+	<!-- 公共的查询列 -->
+	<sql id="userColumns">
+		a.id,
+    	a.oa_id AS "oaId",
+    	a.office_id AS "officeId",
+    	a.login_name AS "loginName",
+    	a.password,
+    	a.no,
+		a.name,
+		a.email,
+		a.phone,
+		a.mobile,
+		a.user_type AS "userType",
+		a.remarks,
+		a.photo,
+		a.del_flag AS "delFlag",
+    	a.nick_name AS "nickName",
+    	a.position,
+    	a.quit_flag AS "quitFlag",
+    	a.sex,
+    	a.job_des AS "jobDes",
+    	a.status,
+    	a.online_status AS "onlineStatus",
+    	a.source_type AS "sourceType",
+    	a.create_date AS "createDate",
+    	a.update_date AS "updateDate"
+	</sql>
+
+	<insert id="saveUser" parameterType="com.isoftstone.app.entity.User" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO sys_user(
+			oa_id, 
+			office_id, 
+			login_name, 
+			password, 
+			no, 
+			name, 
+			email, 
+			phone, 
+			mobile, 
+			user_type, 
+			create_date, 
+			update_date, 
+			remarks, 
+			photo, 
+			del_flag,
+			nick_name,
+			position,
+			quit_flag,
+			sex,
+			job_des,
+			status,
+			online_status,
+			source_type
+		) VALUES (
+			#{oaId}, 
+			#{officeId}, 
+			#{loginName}, 
+			#{password}, 
+			#{no}, 
+			#{name}, 
+			#{email}, 
+			#{phone}, 
+			#{mobile}, 
+			#{userType}, 
+			#{createDate}, 
+			#{updateDate}, 
+			#{remarks}, 
+			#{photo}, 
+			#{delFlag},
+			#{nickName},
+			#{position},
+			#{quitFlag},
+			#{sex},
+			#{jobDes},
+			#{status},
+			#{onlineStatus},
+			#{sourceType}
+		)
+	</insert>
+	
+	<update id="updateUser" parameterType="com.isoftstone.app.entity.User">
+		update sys_user a set
+			<if test="oaId != null and oaId != ''">
+			oa_id=#{oaId}, 
+			</if>
+			<if test="officeId != null and officeId != ''">
+			office_id=#{officeId}, 
+			</if>
+			<if test="password != null and password != ''">
+			password=#{password}, 
+			</if>
+			<if test="name != null and name != ''">
+			name=#{name}, 
+			</if>
+			<if test="email != null and email != ''">
+			email=#{email}, 
+			</if>
+			<if test="phone != null and phone != ''">
+			phone=#{phone}, 
+			</if>
+			<if test="mobile != null and mobile != ''">
+			mobile=#{mobile}, 
+			</if>
+			<if test="userType != null and userType != ''">
+			user_type=#{userType}, 
+			</if>
+			<if test="updateDate != null and updateDate != ''">
+			update_date=#{updateDate}, 
+			</if>
+			<if test="remarks != null and remarks != ''">
+			remarks=#{remarks}, 
+			</if>
+			<if test="photo != null and photo != ''">
+			photo=#{photo}, 
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+			del_flag=#{delFlag},
+			</if>
+			<if test="nickName != null and nickName != ''">
+			nick_name=#{nickName},
+			</if>
+			<if test="position != null and position != ''">
+			position=#{position},
+			</if>
+			<if test="quitFlag != null and quitFlag != ''">
+			quit_flag=#{quitFlag},
+			</if>
+			<if test="sex != null and sex != ''">
+			sex=#{sex},
+			</if>
+			no=#{no}
+		where a.no=#{no}
+	</update>
+	
+	<insert id="saveOffice" parameterType="com.isoftstone.app.entity.Office">
+		INSERT INTO sys_office(
+			id, 
+			parent_id, 
+			parent_ids, 
+			code, 
+			name, 
+			sort, 
+			type, 
+			create_date, 
+			update_date, 
+			remarks, 
+			del_flag,
+			useable,
+			primary_person,
+			deputy_person
+		) VALUES (
+			#{id}, 
+			#{parentId}, 
+			#{parentIds}, 
+			#{code}, 
+			#{name}, 
+			#{sort}, 
+			#{type}, 
+			#{createDate}, 
+			#{updateDate}, 
+			#{remarks}, 
+			#{delFlag},
+			#{useable},
+			#{primaryPerson},
+			#{deputyPerson}
+		)
+	</insert>
+	
+	<update id="updateOffice" parameterType="com.isoftstone.app.entity.Office">
+		update sys_office a set
+			<if test="parentId != null and parentId != ''">
+			parent_id=#{parentId}, 
+			</if>
+			<if test="parentIds != null and parentIds != ''">
+			parent_ids=#{parentIds}, 
+			</if>
+			<if test="code != null and code != ''">
+			code=#{code}, 
+			</if>
+			<if test="name != null and name != ''">
+			name=#{name},
+			</if>
+			<if test="sort != null and sort != ''">
+			sort=#{sort},
+			</if>
+			<if test="type != null and type != ''">
+			type=#{type},
+			</if>
+			<if test="updateDate != null and updateDate != ''">
+			update_date=#{updateDate}, 
+			</if>
+			<if test="remarks != null and remarks != ''">
+			remarks=#{remarks},
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+			del_flag=#{delFlag},
+			</if>
+			<if test="useable != null and useable != ''">
+			useable=#{useable},
+			</if>
+			<if test="primaryPerson != null and primaryPerson != ''">
+			primary_person=#{primaryPerson},
+			</if>
+			<if test="deputyPerson != null and deputyPerson != ''">
+			deputy_person=#{deputyPerson},
+			</if>
+			id=#{id}
+		where a.id=#{id}
+	</update>
+
+	<select id="getUserByNo" parameterType="java.lang.String" resultMap="userResultMap">
+		SELECT
+		    <include refid="userColumns"></include>
+		FROM sys_user a
+		WHERE 
+        no=#{no}
+	</select>
+	
+	<select id="getOfficeById" parameterType="java.lang.String" resultMap="officeResultMap">
+		SELECT
+		    <include refid="officeColumns"></include>
+		FROM sys_office a
+		WHERE 
+        a.id=#{id}
+	</select>
+
+</mapper>

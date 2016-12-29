@@ -1,0 +1,818 @@
+11:17:44.298 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11:17:44.327 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+11:17:45.126 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+11:17:45.184 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+11:17:45.229 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+11:17:45.270 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+11:17:45.521 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+11:17:45.590 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+11:17:45.656 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+11:17:45.749 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+11:19:14.912 [964930995@qtp-1954825161-1] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+11:19:14.921 [964930995@qtp-1954825161-1] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+11:19:14.939 [964930995@qtp-1954825161-1] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+11:19:14.942 [964930995@qtp-1954825161-1] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+11:19:35.518 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+11:19:35.529 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6e57d1]
+11:19:35.605 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6f80526a] will be managed by Spring
+11:19:35.608 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6f80526a]
+11:19:35.641 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+11:19:35.685 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+11:19:35.709 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6e57d1]
+11:19:35.710 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6e57d1]
+11:19:35.711 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6e57d1]
+11:19:42.029 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+11:19:42.030 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20573789]
+11:19:42.030 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@c14a8d1] will be managed by Spring
+11:19:42.030 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@c14a8d1]
+11:19:42.031 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+11:19:42.031 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+11:19:42.033 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20573789]
+11:19:42.034 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20573789]
+11:19:42.034 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20573789]
+11:19:59.050 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+11:19:59.050 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91]
+11:19:59.093 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@349b1c34] will be managed by Spring
+11:19:59.094 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@349b1c34]
+11:19:59.095 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+11:19:59.096 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+11:19:59.099 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91]
+11:19:59.099 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91] from current transaction
+11:19:59.101 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@349b1c34]
+11:19:59.101 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+11:19:59.102 [1571711963@qtp-1954825161-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+11:19:59.113 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91]
+11:19:59.115 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91]
+11:19:59.115 [1571711963@qtp-1954825161-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@240dbf91]
+14:06:15.407 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:06:15.626 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+14:06:16.502 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+14:06:16.768 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+14:06:16.807 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+14:06:16.851 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+14:06:16.910 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+14:06:16.948 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+14:06:16.996 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+14:06:17.045 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+14:07:34.930 [777855410@qtp-1803237110-0] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+14:07:34.941 [777855410@qtp-1803237110-0] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+14:07:34.960 [777855410@qtp-1803237110-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+14:07:34.963 [777855410@qtp-1803237110-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+14:39:09.372 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:39:09.453 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+14:39:10.290 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+14:39:10.337 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+14:39:10.374 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+14:39:10.566 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+14:39:10.676 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+14:39:10.721 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+14:39:10.781 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+14:39:10.830 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+16:06:17.524 [1447704956@qtp-777855410-1] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+16:06:17.577 [1447704956@qtp-777855410-1] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+16:06:17.636 [1447704956@qtp-777855410-1] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:06:17.638 [1447704956@qtp-777855410-1] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+16:26:17.723 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:26:17.795 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252b594e]
+16:26:17.962 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@26861bee] will be managed by Spring
+16:26:17.965 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@26861bee]
+16:26:18.018 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:26:18.247 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:26:18.284 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252b594e]
+16:26:18.286 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252b594e]
+16:26:18.286 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252b594e]
+16:26:53.323 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:26:53.323 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@350aca05]
+16:26:53.335 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4546f33b] will be managed by Spring
+16:26:53.343 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4546f33b]
+16:26:53.344 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:26:53.354 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:26:53.357 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@350aca05]
+16:26:53.363 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@350aca05]
+16:26:53.363 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@350aca05]
+16:26:59.804 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:26:59.804 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e74b47]
+16:26:59.805 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4c206964] will be managed by Spring
+16:26:59.805 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4c206964]
+16:26:59.805 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:26:59.806 [1748380571@qtp-777855410-5] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:26:59.816 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e74b47]
+16:26:59.817 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e74b47]
+16:26:59.818 [1748380571@qtp-777855410-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e74b47]
+16:27:01.217 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:27:01.218 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673]
+16:27:01.311 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@48927075] will be managed by Spring
+16:27:01.312 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@48927075]
+16:27:01.312 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:27:01.312 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:27:01.315 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673]
+16:27:01.316 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673] from current transaction
+16:27:01.317 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@48927075]
+16:27:01.317 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:27:01.318 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:27:01.369 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673]
+16:27:01.371 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673]
+16:27:01.372 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde1673]
+16:32:38.096 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:32:38.097 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+16:32:38.097 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@42d7df5d] will be managed by Spring
+16:32:38.098 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@42d7df5d]
+16:32:38.098 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:32:38.099 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:32:38.100 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+16:32:38.101 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3] from current transaction
+16:32:38.101 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@42d7df5d]
+16:32:38.101 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:32:38.102 [852936962@qtp-777855410-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:32:38.106 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+16:32:38.107 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+16:32:38.107 [852936962@qtp-777855410-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+16:32:44.148 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:32:44.148 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5]
+16:32:44.149 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@695aca95] will be managed by Spring
+16:32:44.149 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@695aca95]
+16:32:44.149 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:32:44.150 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:32:44.152 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5]
+16:32:44.152 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5] from current transaction
+16:32:44.153 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@695aca95]
+16:32:44.153 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:32:44.153 [1673601393@qtp-777855410-15] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:32:44.156 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5]
+16:32:44.157 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5]
+16:32:44.158 [1673601393@qtp-777855410-15] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c825e5]
+16:34:09.566 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:34:10.030 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+16:34:14.215 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+16:34:14.302 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+16:34:14.342 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+16:34:14.388 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+16:34:14.475 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+16:34:14.536 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+16:34:14.631 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+16:34:14.704 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+16:34:24.764 [1956371893@qtp-139076452-4] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+16:34:24.772 [1956371893@qtp-139076452-4] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+16:34:24.806 [1956371893@qtp-139076452-4] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:34:24.810 [1956371893@qtp-139076452-4] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+16:34:30.436 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:34:30.449 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6]
+16:34:30.608 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@5fa8113e] will be managed by Spring
+16:34:30.610 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5fa8113e]
+16:34:30.626 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:34:30.723 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:34:30.747 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6]
+16:34:30.748 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6] from current transaction
+16:34:30.752 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5fa8113e]
+16:34:30.752 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:34:30.754 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:34:30.767 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6]
+16:34:30.768 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6]
+16:34:30.769 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@909f0d6]
+16:34:42.673 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:34:42.673 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df9745e]
+16:34:42.674 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4e9cd3bd] will be managed by Spring
+16:34:42.675 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4e9cd3bd]
+16:34:42.675 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:34:42.676 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:34:42.684 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df9745e]
+16:34:42.685 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df9745e]
+16:34:42.686 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df9745e]
+16:34:43.993 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:34:43.994 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5]
+16:34:43.997 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@60af3192] will be managed by Spring
+16:34:43.997 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@60af3192]
+16:34:43.997 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:34:43.998 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:34:43.999 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5]
+16:34:44.000 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5] from current transaction
+16:34:44.001 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@60af3192]
+16:34:44.001 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:34:44.001 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:34:44.005 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5]
+16:34:44.006 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5]
+16:34:44.006 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ddf99d5]
+16:34:50.060 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:34:50.060 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac]
+16:34:50.061 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@5160ba79] will be managed by Spring
+16:34:50.061 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5160ba79]
+16:34:50.061 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:34:50.062 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:34:50.084 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac]
+16:34:50.084 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac] from current transaction
+16:34:50.085 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5160ba79]
+16:34:50.085 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:34:50.086 [439172821@qtp-139076452-3] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:34:50.097 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac]
+16:34:50.101 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac]
+16:34:50.102 [439172821@qtp-139076452-3] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@257287ac]
+16:34:59.204 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:34:59.206 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f]
+16:34:59.206 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7678c6b4] will be managed by Spring
+16:34:59.206 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7678c6b4]
+16:34:59.207 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:34:59.207 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:34:59.209 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f]
+16:34:59.210 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f] from current transaction
+16:34:59.210 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7678c6b4]
+16:34:59.213 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:34:59.213 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:34:59.225 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f]
+16:34:59.238 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f]
+16:34:59.238 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733d902f]
+16:35:51.763 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:35:51.764 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075]
+16:35:51.764 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@46a7c908] will be managed by Spring
+16:35:51.764 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@46a7c908]
+16:35:51.765 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:35:51.765 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:35:51.768 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075]
+16:35:51.768 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075] from current transaction
+16:35:51.769 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@46a7c908]
+16:35:51.769 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:35:51.770 [1889722305@qtp-139076452-2] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:35:51.773 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075]
+16:35:51.774 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075]
+16:35:51.775 [1889722305@qtp-139076452-2] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@317f5075]
+16:36:01.821 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:36:01.822 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@506f9894]
+16:36:01.822 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f9a9fc6] will be managed by Spring
+16:36:01.823 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2f9a9fc6]
+16:36:01.823 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:36:01.823 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:36:01.826 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@506f9894]
+16:36:01.827 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@506f9894]
+16:36:01.828 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@506f9894]
+16:36:03.102 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:36:03.103 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26]
+16:36:03.104 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@3431f3b7] will be managed by Spring
+16:36:03.105 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3431f3b7]
+16:36:03.105 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:36:03.106 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:36:03.108 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26]
+16:36:03.108 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26] from current transaction
+16:36:03.108 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3431f3b7]
+16:36:03.109 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:36:03.109 [1521782107@qtp-139076452-10] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:36:03.146 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26]
+16:36:03.148 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26]
+16:36:03.148 [1521782107@qtp-139076452-10] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b778e26]
+16:37:02.841 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:37:02.841 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd]
+16:37:02.842 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@583c4f04] will be managed by Spring
+16:37:02.842 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@583c4f04]
+16:37:02.843 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:37:02.843 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:37:02.855 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd]
+16:37:02.856 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd] from current transaction
+16:37:02.856 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@583c4f04]
+16:37:02.857 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:37:02.859 [1167312131@qtp-139076452-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:37:02.864 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd]
+16:37:02.866 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd]
+16:37:02.866 [1167312131@qtp-139076452-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f67bcdd]
+16:46:00.734 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:46:00.735 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e]
+16:46:00.735 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c3ed2fb] will be managed by Spring
+16:46:00.736 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2c3ed2fb]
+16:46:00.736 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:46:00.737 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:46:00.739 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e]
+16:46:00.739 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e] from current transaction
+16:46:00.741 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2c3ed2fb]
+16:46:00.741 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:46:00.743 [668219410@qtp-139076452-12] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:46:00.747 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e]
+16:46:00.750 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e]
+16:46:00.751 [668219410@qtp-139076452-12] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508d736e]
+16:47:01.150 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:47:01.151 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad]
+16:47:01.151 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@59ba66b] will be managed by Spring
+16:47:01.151 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@59ba66b]
+16:47:01.152 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:47:01.152 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:47:01.154 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad]
+16:47:01.154 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad] from current transaction
+16:47:01.155 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@59ba66b]
+16:47:01.155 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:47:01.156 [1956371893@qtp-139076452-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:47:01.172 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad]
+16:47:01.175 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad]
+16:47:01.175 [1956371893@qtp-139076452-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dcabdad]
+16:47:50.528 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:47:50.529 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9]
+16:47:50.529 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6131d379] will be managed by Spring
+16:47:50.529 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6131d379]
+16:47:50.530 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:47:50.530 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:47:50.532 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9]
+16:47:50.533 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9] from current transaction
+16:47:50.533 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6131d379]
+16:47:50.534 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:47:50.534 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:47:50.539 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9]
+16:47:50.540 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9]
+16:47:50.541 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e32dec9]
+16:48:01.040 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:48:01.040 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431777de]
+16:48:01.040 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@21471a6b] will be managed by Spring
+16:48:01.041 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@21471a6b]
+16:48:01.041 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+16:48:01.041 [980908745@qtp-139076452-16] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+16:48:01.043 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431777de]
+16:48:01.045 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431777de]
+16:48:01.046 [980908745@qtp-139076452-16] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@431777de]
+16:48:02.180 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:48:02.181 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06]
+16:48:02.182 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2ec84ab8] will be managed by Spring
+16:48:02.182 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2ec84ab8]
+16:48:02.182 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:48:02.183 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:48:02.184 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06]
+16:48:02.185 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06] from current transaction
+16:48:02.185 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2ec84ab8]
+16:48:02.185 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:48:02.186 [664969789@qtp-139076452-17] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:48:02.202 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06]
+16:48:02.211 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06]
+16:48:02.211 [664969789@qtp-139076452-17] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fa18e06]
+16:50:15.802 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:50:15.803 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0]
+16:50:15.804 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@77dd699a] will be managed by Spring
+16:50:15.804 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@77dd699a]
+16:50:15.804 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:50:15.804 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:50:15.806 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0]
+16:50:15.806 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0] from current transaction
+16:50:15.807 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@77dd699a]
+16:50:15.807 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:50:15.807 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:50:15.810 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0]
+16:50:15.811 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0]
+16:50:15.811 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69403af0]
+16:51:13.708 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:51:13.709 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da]
+16:51:13.710 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a866f3a] will be managed by Spring
+16:51:13.710 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3a866f3a]
+16:51:13.711 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:51:13.711 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:51:13.713 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da]
+16:51:13.713 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da] from current transaction
+16:51:13.714 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3a866f3a]
+16:51:13.714 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:51:13.715 [398855449@qtp-139076452-13] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:51:13.719 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da]
+16:51:13.720 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da]
+16:51:13.721 [398855449@qtp-139076452-13] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ff066da]
+16:52:06.921 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:52:06.921 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6]
+16:52:06.922 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@224dbab] will be managed by Spring
+16:52:06.922 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@224dbab]
+16:52:06.922 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:52:06.923 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:52:06.925 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6]
+16:52:06.926 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6] from current transaction
+16:52:06.926 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@224dbab]
+16:52:06.927 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:52:06.928 [712625267@qtp-139076452-21] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:52:06.964 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6]
+16:52:06.967 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6]
+16:52:06.968 [712625267@qtp-139076452-21] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d1b8a6]
+16:52:42.542 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:52:42.543 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3]
+16:52:42.543 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4abfb91b] will be managed by Spring
+16:52:42.544 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4abfb91b]
+16:52:42.544 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:52:42.545 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:52:42.547 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3]
+16:52:42.548 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3] from current transaction
+16:52:42.548 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4abfb91b]
+16:52:42.549 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:52:42.549 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:52:42.554 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3]
+16:52:42.555 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3]
+16:52:42.555 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7111c1f3]
+16:54:17.422 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:54:17.423 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624]
+16:54:17.423 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@66631b77] will be managed by Spring
+16:54:17.423 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@66631b77]
+16:54:17.423 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:54:17.424 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:54:17.425 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624]
+16:54:17.425 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624] from current transaction
+16:54:17.427 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@66631b77]
+16:54:17.427 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:54:17.428 [150129108@qtp-139076452-19] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:54:17.433 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624]
+16:54:17.434 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624]
+16:54:17.434 [150129108@qtp-139076452-19] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a05624]
+16:59:18.141 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+16:59:18.142 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22]
+16:59:18.142 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7e6c0e3] will be managed by Spring
+16:59:18.142 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7e6c0e3]
+16:59:18.143 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+16:59:18.143 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+16:59:18.145 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22]
+16:59:18.145 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22] from current transaction
+16:59:18.146 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7e6c0e3]
+16:59:18.146 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+16:59:18.147 [625051713@qtp-139076452-31] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+16:59:18.149 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22]
+16:59:18.150 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22]
+16:59:18.150 [625051713@qtp-139076452-31] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e817b22]
+17:04:56.051 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:04:56.052 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38]
+17:04:56.053 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716b5514] will be managed by Spring
+17:04:56.053 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@716b5514]
+17:04:56.053 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:04:56.054 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:04:56.056 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38]
+17:04:56.057 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38] from current transaction
+17:04:56.057 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@716b5514]
+17:04:56.057 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:04:56.058 [431700558@qtp-139076452-33] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:04:56.073 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38]
+17:04:56.074 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38]
+17:04:56.074 [431700558@qtp-139076452-33] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d9ece38]
+17:05:50.600 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:05:50.600 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd]
+17:05:50.601 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b2767ed] will be managed by Spring
+17:05:50.601 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2b2767ed]
+17:05:50.601 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:05:50.601 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:05:50.615 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd]
+17:05:50.615 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd] from current transaction
+17:05:50.616 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2b2767ed]
+17:05:50.616 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:05:50.617 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:05:50.624 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd]
+17:05:50.625 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd]
+17:05:50.625 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28180ebd]
+17:06:05.169 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:06:05.170 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98]
+17:06:05.170 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@660d23d7] will be managed by Spring
+17:06:05.170 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@660d23d7]
+17:06:05.170 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:06:05.171 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:06:05.186 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98]
+17:06:05.186 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98] from current transaction
+17:06:05.187 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@660d23d7]
+17:06:05.187 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:06:05.188 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:06:05.191 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98]
+17:06:05.192 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98]
+17:06:05.193 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ac2c98]
+17:06:26.890 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:06:26.891 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0]
+17:06:26.891 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@26f78b7c] will be managed by Spring
+17:06:26.891 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@26f78b7c]
+17:06:26.892 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:06:26.892 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:06:26.895 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0]
+17:06:26.895 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0] from current transaction
+17:06:26.895 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@26f78b7c]
+17:06:26.896 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:06:26.896 [1187313365@qtp-139076452-29] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:06:26.899 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0]
+17:06:26.900 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0]
+17:06:26.901 [1187313365@qtp-139076452-29] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45e68de0]
+17:07:11.662 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:07:11.662 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593]
+17:07:11.663 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@562849e5] will be managed by Spring
+17:07:11.663 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@562849e5]
+17:07:11.664 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:07:11.664 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:07:11.670 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593]
+17:07:11.671 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593] from current transaction
+17:07:11.671 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@562849e5]
+17:07:11.672 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:07:11.672 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:07:11.675 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593]
+17:07:11.676 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593]
+17:07:11.676 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0b8593]
+17:07:40.932 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:07:40.933 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1]
+17:07:40.934 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28e89aaa] will be managed by Spring
+17:07:40.934 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@28e89aaa]
+17:07:40.934 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:07:40.935 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:07:40.938 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1]
+17:07:40.938 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1] from current transaction
+17:07:40.938 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@28e89aaa]
+17:07:40.939 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:07:40.939 [40021681@qtp-139076452-23] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:07:40.967 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1]
+17:07:40.968 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1]
+17:07:40.969 [40021681@qtp-139076452-23] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0223e1]
+17:08:13.458 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:08:13.459 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a]
+17:08:13.460 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@5d753ced] will be managed by Spring
+17:08:13.460 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5d753ced]
+17:08:13.461 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:08:13.461 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:08:13.464 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a]
+17:08:13.466 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a] from current transaction
+17:08:13.467 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5d753ced]
+17:08:13.467 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:08:13.468 [1735459781@qtp-139076452-27] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:08:13.478 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a]
+17:08:13.480 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a]
+17:08:13.481 [1735459781@qtp-139076452-27] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bf31b8a]
+17:08:45.679 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:08:45.680 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221]
+17:08:45.680 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4cda2a5a] will be managed by Spring
+17:08:45.680 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4cda2a5a]
+17:08:45.680 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:08:45.681 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:08:45.686 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221]
+17:08:45.687 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221] from current transaction
+17:08:45.687 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4cda2a5a]
+17:08:45.688 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:08:45.689 [762835659@qtp-139076452-37] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:08:45.701 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221]
+17:08:45.702 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221]
+17:08:45.703 [762835659@qtp-139076452-37] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@712a221]
+17:16:22.525 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:16:22.526 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424]
+17:16:22.526 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7923b62e] will be managed by Spring
+17:16:22.527 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7923b62e]
+17:16:22.527 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:16:22.527 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:16:22.529 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424]
+17:16:22.529 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424] from current transaction
+17:16:22.530 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7923b62e]
+17:16:22.530 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:16:22.530 [1085841467@qtp-139076452-39] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:16:22.534 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424]
+17:16:22.535 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424]
+17:16:22.536 [1085841467@qtp-139076452-39] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@178dc424]
+17:16:40.969 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:16:40.969 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137]
+17:16:40.969 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28a3f689] will be managed by Spring
+17:16:40.970 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@28a3f689]
+17:16:40.970 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:16:40.970 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:16:40.972 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137]
+17:16:40.973 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137] from current transaction
+17:16:40.973 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@28a3f689]
+17:16:40.973 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:16:40.974 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:16:40.976 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137]
+17:16:40.977 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137]
+17:16:40.978 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@248eb137]
+17:18:01.941 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:18:01.941 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce]
+17:18:01.941 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c8aca1a] will be managed by Spring
+17:18:01.942 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2c8aca1a]
+17:18:01.942 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:18:01.942 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:18:01.954 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce]
+17:18:01.955 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce] from current transaction
+17:18:01.955 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2c8aca1a]
+17:18:01.956 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:18:01.956 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:18:01.959 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce]
+17:18:01.960 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce]
+17:18:01.960 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bda87ce]
+17:19:54.732 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:19:54.733 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0]
+17:19:54.733 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@12dfe4a] will be managed by Spring
+17:19:54.733 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@12dfe4a]
+17:19:54.734 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:19:54.734 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:19:54.735 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0]
+17:19:54.736 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0] from current transaction
+17:19:54.736 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@12dfe4a]
+17:19:54.736 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:19:54.737 [1680576052@qtp-139076452-43] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:19:54.739 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0]
+17:19:54.740 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0]
+17:19:54.741 [1680576052@qtp-139076452-43] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7291ace0]
+17:23:01.558 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:23:01.559 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166]
+17:23:01.559 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@354563cc] will be managed by Spring
+17:23:01.560 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@354563cc]
+17:23:01.560 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:23:01.560 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:23:01.595 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166]
+17:23:01.595 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166] from current transaction
+17:23:01.596 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@354563cc]
+17:23:01.596 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:23:01.597 [1376895884@qtp-139076452-41] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:23:01.610 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166]
+17:23:01.612 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166]
+17:23:01.612 [1376895884@qtp-139076452-41] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e9b0166]
+17:24:23.016 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:24:23.016 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8]
+17:24:23.017 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@502cab7f] will be managed by Spring
+17:24:23.017 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@502cab7f]
+17:24:23.018 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:24:23.018 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:24:23.020 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8]
+17:24:23.021 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8] from current transaction
+17:24:23.021 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@502cab7f]
+17:24:23.022 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:24:23.023 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:24:23.025 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8]
+17:24:23.026 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8]
+17:24:23.027 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24af47f8]
+17:25:18.147 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:25:18.147 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157]
+17:25:18.148 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@295d66e0] will be managed by Spring
+17:25:18.148 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@295d66e0]
+17:25:18.148 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:25:18.149 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:25:18.150 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157]
+17:25:18.150 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157] from current transaction
+17:25:18.151 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@295d66e0]
+17:25:18.151 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:25:18.151 [15740289@qtp-139076452-45] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:25:18.154 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157]
+17:25:18.155 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157]
+17:25:18.156 [15740289@qtp-139076452-45] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@330d1157]
+17:26:25.122 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:26:25.122 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632]
+17:26:25.123 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@5d7fb95] will be managed by Spring
+17:26:25.123 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5d7fb95]
+17:26:25.123 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:26:25.123 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:26:25.125 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632]
+17:26:25.125 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632] from current transaction
+17:26:25.126 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5d7fb95]
+17:26:25.126 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:26:25.127 [974073902@qtp-139076452-46] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:26:25.130 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632]
+17:26:25.131 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632]
+17:26:25.131 [974073902@qtp-139076452-46] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26c5f632]
+17:31:08.421 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:31:08.421 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4]
+17:31:08.422 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@4ddcd703] will be managed by Spring
+17:31:08.422 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4ddcd703]
+17:31:08.422 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:31:08.423 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:31:08.436 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4]
+17:31:08.436 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4] from current transaction
+17:31:08.437 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4ddcd703]
+17:31:08.437 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:31:08.437 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:31:08.440 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4]
+17:31:08.441 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4]
+17:31:08.442 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5da82de4]
+17:31:14.162 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:31:14.163 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d]
+17:31:14.163 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a51d020] will be managed by Spring
+17:31:14.163 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7a51d020]
+17:31:14.163 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:31:14.164 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:31:14.165 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d]
+17:31:14.166 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d] from current transaction
+17:31:14.166 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7a51d020]
+17:31:14.166 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:31:14.167 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:31:14.180 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d]
+17:31:14.181 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d]
+17:31:14.182 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1137239d]
+17:31:21.224 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:31:21.225 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780]
+17:31:21.225 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cda8074] will be managed by Spring
+17:31:21.225 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6cda8074]
+17:31:21.226 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:31:21.226 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:31:21.228 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780]
+17:31:21.228 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780] from current transaction
+17:31:21.229 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6cda8074]
+17:31:21.229 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select id,job_title,city_id,job_type_id,job_nature_id,expect_pay,is_negotiable,education,status,job_details,job_criteria,publish_time,create_time,update_time,isdel,page_views from t_job where 1=1 ORDER BY create_time DESC LIMIT ?, ? 
+17:31:21.230 [1316783006@qtp-139076452-48] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:31:21.238 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780]
+17:31:21.240 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780]
+17:31:21.240 [1316783006@qtp-139076452-48] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d277780]
+17:59:10.745 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+17:59:10.772 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+17:59:11.692 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+17:59:11.743 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+17:59:11.775 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+17:59:11.808 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+17:59:11.849 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+17:59:11.909 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+17:59:11.997 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+17:59:12.103 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+17:59:26.899 [889270028@qtp-1215988339-7] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+17:59:26.909 [889270028@qtp-1215988339-7] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+17:59:26.914 [889270028@qtp-1215988339-7] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+17:59:26.917 [889270028@qtp-1215988339-7] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+17:59:29.109 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:59:29.121 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe]
+17:59:29.392 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@26b08311] will be managed by Spring
+17:59:29.395 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@26b08311]
+17:59:29.405 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:59:29.454 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:59:29.480 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe]
+17:59:29.481 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe] from current transaction
+17:59:29.484 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@26b08311]
+17:59:29.485 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.id LEFT JOIN t_job_type jt ON j.city_id = jt.id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+17:59:29.485 [889270028@qtp-1215988339-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:59:29.758 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe]
+17:59:29.760 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization rolling back SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe]
+17:59:29.760 [889270028@qtp-1215988339-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24805ffe]
+17:59:43.334 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:59:43.335 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+17:59:43.336 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@300dc556] will be managed by Spring
+17:59:43.337 [1412549119@qtp-1215988339-8] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@300dc556]
+17:59:43.337 [1412549119@qtp-1215988339-8] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+17:59:43.338 [1412549119@qtp-1215988339-8] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+17:59:43.340 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+17:59:43.341 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+17:59:43.341 [1412549119@qtp-1215988339-8] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8974f3]
+17:59:44.807 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+17:59:44.808 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713]
+17:59:44.811 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@2a9fb5f1] will be managed by Spring
+17:59:44.811 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2a9fb5f1]
+17:59:44.811 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+17:59:44.812 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+17:59:44.813 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713]
+17:59:44.814 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713] from current transaction
+17:59:44.814 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2a9fb5f1]
+17:59:44.815 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.id LEFT JOIN t_job_type jt ON j.city_id = jt.id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+17:59:44.815 [1636602092@qtp-1215988339-4] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+17:59:44.817 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713]
+17:59:44.818 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization rolling back SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713]
+17:59:44.819 [1636602092@qtp-1215988339-4] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b61f713]
+18:02:00.126 [main] DEBUG org.apache.ibatis.logging.LogFactory.debug - Logging initialized using 'org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+18:02:00.147 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Property 'configLocation' not specified, using default MyBatis Configuration
+18:02:00.623 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\config\Mysql_ConfigMapper.xml]'
+18:02:00.688 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobMapper.xml]'
+18:02:00.734 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\job\Mysql_JobTypeMapper.xml]'
+18:02:00.977 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\Mysql_UserMapper.xml]'
+18:02:01.023 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_EducationMapper.xml]'
+18:02:01.066 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ProjectMapper.xml]'
+18:02:01.146 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_ResumeMapper.xml]'
+18:02:01.246 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean.debug - Parsed mapper file: 'file [D:\workspace_zpApp\zpApp\target\classes\META-INF\mybatis\manager\resume\Mysql_WorkExperienceMapper.xml]'
+18:02:06.338 [1490782441@qtp-1064272651-0] INFO  org.hibernate.validator.util.Version.<clinit> - Hibernate Validator 4.2.0.Final
+18:02:06.348 [1490782441@qtp-1064272651-0] DEBUG org.hibernate.validator.engine.resolver.DefaultTraversableResolver.detectJPA - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+18:02:06.353 [1490782441@qtp-1064272651-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - Trying to load META-INF/validation.xml for XML based Validator configuration.
+18:02:06.355 [1490782441@qtp-1064272651-0] DEBUG org.hibernate.validator.xml.ValidationXmlParser.getValidationConfig - No META-INF/validation.xml found. Using annotation based configuration only
+18:02:17.029 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+18:02:17.035 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4262f2c8]
+18:02:17.099 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28525e69] will be managed by Spring
+18:02:17.102 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@28525e69]
+18:02:17.131 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==>  Preparing: SELECT id, username, password FROM t_user_info WHERE username=? 
+18:02:17.182 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.userDao.getUserByName.debug - ==> Parameters: admin(String)
+18:02:17.205 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4262f2c8]
+18:02:17.207 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4262f2c8]
+18:02:17.207 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4262f2c8]
+18:02:19.155 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+18:02:19.156 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0]
+18:02:19.197 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@400f587a] will be managed by Spring
+18:02:19.198 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@400f587a]
+18:02:19.199 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+18:02:19.199 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+18:02:19.201 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0]
+18:02:19.202 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0] from current transaction
+18:02:19.203 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@400f587a]
+18:02:19.204 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.city_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+18:02:19.205 [1490782441@qtp-1064272651-0] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+18:02:19.218 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0]
+18:02:19.223 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0]
+18:02:19.223 [1490782441@qtp-1064272651-0] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f1218e0]
+18:03:05.735 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+18:03:05.736 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4]
+18:03:05.737 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@1bd9c905] will be managed by Spring
+18:03:05.737 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1bd9c905]
+18:03:05.738 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+18:03:05.738 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+18:03:05.740 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4]
+18:03:05.741 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4] from current transaction
+18:03:05.741 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1bd9c905]
+18:03:05.742 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.city_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+18:03:05.743 [982656238@qtp-1064272651-5] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+18:03:05.746 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4]
+18:03:05.762 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4]
+18:03:05.763 [982656238@qtp-1064272651-5] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d6935c4]
+18:04:37.711 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+18:04:37.712 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce]
+18:04:37.712 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a38141] will be managed by Spring
+18:04:37.713 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6a38141]
+18:04:37.713 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+18:04:37.713 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+18:04:37.722 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce]
+18:04:37.722 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce] from current transaction
+18:04:37.723 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6a38141]
+18:04:37.723 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.city_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+18:04:37.724 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+18:04:37.734 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce]
+18:04:37.735 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce]
+18:04:37.736 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@587ad5ce]
+18:04:39.556 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Creating a new SqlSession
+18:04:39.557 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69]
+18:04:39.557 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction.debug - JDBC Connection [com.mysql.jdbc.JDBC4Connection@1f4f102d] will be managed by Spring
+18:04:39.558 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1f4f102d]
+18:04:39.558 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==>  Preparing: select count(id) from t_job where 1=1 
+18:04:39.558 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.total.debug - ==> Parameters: 
+18:04:39.573 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69]
+18:04:39.575 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69] from current transaction
+18:04:39.575 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1f4f102d]
+18:04:39.576 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==>  Preparing: select j.id id, j.job_title jobTitle, jt.type_name jobTypeName, t.type_name cityName, j.job_nature_id, j.expect_pay expectPay, j.is_negotiable isNegotiable, j.education education, j.status status, j.publish_time publishTime, j.create_time createTime, j.update_time updateTime, j.page_views pageViews from t_job j LEFT JOIN t_job_type t ON j.city_id = t.type_id LEFT JOIN t_job_type jt ON j.city_id = jt.type_id where 1=1 ORDER BY j.publish_time DESC LIMIT ?, ? 
+18:04:39.576 [538166961@qtp-1064272651-7] DEBUG com.isoftstone.app.entity.job.JobDao.queryJobList.debug - ==> Parameters: 0(Long), 10(Long)
+18:04:39.580 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69]
+18:04:39.581 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69]
+18:04:39.581 [538166961@qtp-1064272651-7] DEBUG org.mybatis.spring.SqlSessionUtils.debug - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7faf0a69]

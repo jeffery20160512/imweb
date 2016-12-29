@@ -1,0 +1,407 @@
+html,body {
+	/*height:100%;	*/
+}
+.clearfix:after,
+.clearfix:before {
+	display:block;
+	content:" ";
+	clear:both;	
+}
+
+.clearfix {
+	*zoom:1;	
+}
+
+.clear {
+	clear:both;	
+}
+
+.fl {
+	float:left;	
+}
+
+.fr {
+	float:right;	
+}
+
+.fl,
+.fr {
+	display:inline;	
+}
+
+body {
+	background:#eee;
+	font-size:12px;
+	font-family:"Microsoft YaHei";
+}
+
+
+/*--------------------菜单列表----------------------*/
+.f_l {
+    float: left;
+}
+
+.f_r {
+    float: right;
+}
+
+.top .main .logo .logo_text .logo_text1 {
+    height: 50px;
+    width: 420px;
+}
+
+.top .main .logo .logo_text .logo_text1 .logo_text1_1 {
+    font-size: 27px;
+}
+
+.top .main .logo .logo_text .logo_text1 .logo_text1_2 {
+    font-size: 12px;
+}
+
+.top .main .logo .logo_text .logo_text2 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+.top .main .top_right {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.top .main .top_right .top_right_2 {
+    margin-left: 10px;
+    width: 300px;
+}
+
+
+.top {
+    background: none repeat scroll 0 0 #0b5abb;
+    height: 90px;
+    width: 100%;
+}
+
+.main {
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.top .main .logo {
+    height: 60px;
+    width: 650px;
+}
+
+.top .main .logo .logo_text {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.top .main .top_right span {
+    color: #fefefe;
+    display: inline-block;
+}
+
+.top .main .top_right .top_right_3 {
+    margin-left: 22px;
+    width: 75px;
+}
+
+.top .main .top_right .top_right_3 a, 
+.top .main .top_right .top_right_4 a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.top .main .top_right .top_right_4 {
+    margin-left: 30px;
+    width: 40px;
+}
+
+.container {
+    min-height: 600px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.p_t_20 {
+    padding-top: 20px;
+}
+
+.container .main {
+    height: 100%;
+}
+
+.container .main_left {
+    background: none repeat scroll 0 0 #ffffff;
+    width: 190px;
+}
+
+.container .main_right {
+    height: 100%;
+    width: 970px;
+}
+
+.container .main_left ul li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    text-indent: 38px;
+    width: 100%;
+}
+
+.container .main_left ul a.menu_click {
+    background: none repeat scroll 0 0 #0b5abb;
+    color: #fff;
+}
+
+.container .main_left ul li a {
+    color: #555555;
+    float: left;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.container .main_left ul li a img {
+    margin-right: 4px;
+    position: relative;
+    top: 1px;
+}
+
+.container .main_left ul li ul li {
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    text-indent: 60px;
+}
+
+.container .main_left ul li a {
+    color: #555555;
+    float: left;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.main_right {
+	background:#fff;	
+}
+
+.container .main_left ul a.menu_over {
+    background: none repeat scroll 0 0 #edf4fb;
+}
+
+.footer {
+    background: none repeat scroll 0 0 #c7d0dc;
+    color: #333333;
+    height: 75px;
+    width: 100%;
+}
+
+.footer div {
+    line-height: 30px;
+}
+
+.footer div {
+    line-height: 30px;
+}
+
+.p_t_10 {
+    padding-top: 10px;
+}
+
+.t_c {
+    text-align: center;
+}
+
+.hr {
+	margin:0 42px;
+	height:1px;
+	overflow:hidden;
+	background:#ccc;	
+}
+
+.pt15 {
+	padding-top:15px;	
+}
+
+.ml56 {
+	margin-left:56px !important;	
+}
+
+.company1 {
+    background: none repeat scroll 0 0 #fff;
+    height: 100%;
+    width: 970px;
+}
+
+.company1 .company1_1 {
+    border: 1px solid #cccccc;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 950px;
+}
+
+.company1 .company1_2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #cccccc #cccccc;
+    border-image: none;
+    border:1px solid #ccc;
+    border-width: 0 1px 1px;
+    color: #999999;
+    cursor: pointer;
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 436px;
+    text-align: center;
+    width: 97px;
+}
+
+.company1 .company1_1 dl, .company1 .company1_1 dl dd {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.company1 .company1_1 dl, .company1 .company1_1 dl dd {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.company1 .company1_1 dl span {
+    color: #777777;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    line-height: 42px;
+    margin: 0 8px;
+}
+
+.company1 .company1_1 dl .span_1 {
+    color: #000000;
+    font-size: 14px;
+    text-align: right;
+    width: 120px;
+}
+
+.company1 .company1_1 dl .span_2 {
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 12px;
+    margin-right: 16px;
+    margin-top: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+.company1 .company1_1 dl span.hover a {
+    background: #0b5abb;
+    color: #fffefe;
+    padding: 6px 8px;
+}
+
+.company1 .company1_1 dl span a {
+    color: #777777;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+
+.display_no {
+    display: none;
+}
+
+.company2 {
+    background: none repeat scroll 0 0 #fff;
+    height: 28px;
+    width: 100%;
+}
+
+.company2_1 {
+    border: 1px solid #abadb3;
+    line-height: 28px;
+    margin-right: 43px;
+    width: 260px;
+}
+
+.company2_1_1 {
+    line-height: 28px;
+    width: 24px;
+}
+
+.company2_1_2 {
+    height: 28px;
+    line-height: 28px;
+    width: 170px;
+}
+
+.company2_1_3 {
+    background: none repeat scroll 0 0 #999999;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    width: 60px;
+}
+
+.m_t_6 {
+    margin-top: 6px;
+}
+
+.m_r_10 {
+    margin-right: 10px;
+}
+
+.m_l_4 {
+    margin-left: 4px;
+}
+
+img {
+    border: 0 none;
+}
+
+.company2_1_2 input {
+    border: 0 none;
+    color: #a6a6a6;
+    height: 27px;
+    line-height: 27px;
+    width: 170px;
+}
+
+.company3 {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 2px solid #0b5abb;
+    height: 42px;
+    line-height: 42px;
+    padding-top: 6px;
+    width: 100%;
+}
+
+.company3_1 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 12px;
+}
+
+.company3_2 {
+    color: #333333;
+    font-size: 13px;
+    margin-right: 43px;
+}
+
+.bg_w{background: #fff!important;}

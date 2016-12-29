@@ -1,0 +1,98 @@
+<?xml  version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:mvc="http://www.springframework.org/schema/mvc"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://www.springframework.org/schema/context   
+        http://www.springframework.org/schema/context/spring-context.xsd  
+        http://www.springframework.org/schema/mvc   
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+        ">  
+    <mvc:annotation-driven/> 
+    <!-- 配置Annotation -->
+    <context:annotation-config />  
+    <!--配置自动扫描Annotation的路径  -->
+	<context:component-scan base-package="com.isoftstone.app.controller"/>
+	
+    <bean id="stringConverter" class="org.springframework.http.converter.StringHttpMessageConverter">  
+        <property name="supportedMediaTypes">  
+            <list>  
+                <value>text/plain;charset=UTF-8</value>  
+            </list>  
+        </property>  
+    </bean>  
+	
+	<bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"> 
+	 	 <property name="supportedMediaTypes" value="application/json;charset=UTF-8" />
+	</bean>
+	 <bean  class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">  
+            <list>  
+                <ref bean="stringConverter"/>  
+                <ref bean="jsonConverter" />  
+            </list>  
+        </property>  
+    </bean>  
+    
+   	<!-- 上传文件的解析器 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8" />
+		<property name="maxUploadSize" value="20971520" />
+		<property name="maxInMemorySize" value="40960" />
+	</bean>
+	
+	<!--  拦截MVC中请求  -->
+    <!-- <mvc:interceptors>
+		<bean class="com.isoftstone.app.interceptor.LoginInterceptor"></bean>
+    </mvc:interceptors> -->
+	
+      <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
+	  <bean id="mappingJacksonHttpMessageConverter"
+	    class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	    <property name="supportedMediaTypes">
+	      <list>
+	        <value>text/html;charset=UTF-8</value>
+	      </list>
+	    </property>
+	  </bean>
+	  <!-- 启动SpringMVC的注解功能，完成请求和注解POJO的映射 -->
+	  <bean
+	    class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	    <property name="messageConverters">
+	      <list>
+	        <ref bean="mappingJacksonHttpMessageConverter" />	<!-- JSON转换器 -->
+	      </list>
+	    </property>
+	  </bean>
+	  
+      <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+			<map>
+				<!-- 告诉视图解析器，返回的类型为json格式 -->
+				<entry key="json" value="application/json" />
+				<entry key="ajax" value="application/json" />
+			</map>
+		</property>
+		<property name="viewResolvers">
+			<list>
+				<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" />
+			</list>
+		</property>
+		<property name="defaultViews">
+			<list>
+				<!-- ModelAndView里的数据变成JSON -->
+	            <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
+			</list>	
+		</property>
+	</bean>
+    
+    
+	<!-- 普通资源 -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean> -->
+</beans>

@@ -1,0 +1,51 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td { 
+	margin:0;padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+	font-size:100%;
+}
+
+ol,ul { 
+	list-style:none;
+}
+
+input, select {
+	font-family:arial,helvetica,clean,sans-serif;
+	font-size:100%;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	
+}
+
+input{
+	outline:none;
+} 
+select{
+	cursor:pointer;
+}
+address,caption,cite,code,dfn,em,strong,th,var { 
+	font-size:normal; 
+	font-weight:normal;
+}
+
+table { 
+	border-collapse:collapse; 
+	border-spacing:0;
+}
+
+fieldset,img { 
+	border:0;
+}
+
+caption,th { 
+	text-align:left; 
+}
+
+q:before,q:after { 
+	content:'';
+}
